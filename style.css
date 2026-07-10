@@ -1,0 +1,105 @@
+/* ****** Universal Selector ******* */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Common items */
+
+.common-btn {
+  display: inline-block;
+  background-color: #1d4ed8;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Header Section Style */
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-list a {
+  color: #575757;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-list a:hover {
+  color: black;
+}
+
+/* ********* hero Section *************** */
+
+.hero-section {
+  background-image: url(./assets/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 786px;
+  position: relative;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20rem;
+
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 5rem;
+  max-width: 900px;
+  margin-top: 2rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  max-width: 800px;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.hero-cta .common-btn {
+  padding: 1.7rem 5rem;
+  font-size: 1.5rem;
+}
