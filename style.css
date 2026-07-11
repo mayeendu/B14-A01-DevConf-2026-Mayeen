@@ -85,7 +85,7 @@
 }
 
 .hero-content h2 {
-  font-size: 5rem;
+  font-size: 3rem;
   max-width: 900px;
   margin-top: 2rem;
   margin-bottom: 1.5rem;
@@ -116,6 +116,7 @@
   margin-top: 40px;
   margin-bottom: 30px;
   font-size: 2.5rem;
+  color: #000102;
 }
 
 .speaker-grid {
@@ -149,17 +150,18 @@
 
 .card-text h2 {
   font-size: 0.8rem;
-  color: #0076ff;
+  color: #2563eb;
 }
 
 .card-text .name {
   font-weight: bold;
   font-size: 1.1rem;
   margin: 0 0 5px 0;
+  color: #0d1b2a;
 }
 
 .card-text .role {
-  color: #666;
+  color: #575757;
   margin: 0 0 5px 0;
   font-size: 0.9rem;
 }
@@ -206,24 +208,27 @@
 .price-pro {
   background: #2b2b2b;
 }
+.price-team {
+  background: #e5e7eb;
+}
 
 .plan-name {
   display: block;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #4a4b4c;
+  color: #888888;
   margin-bottom: 18px;
 }
 
 .price-pro .plan-name {
-  color: blue;
+  color: #93c5fd;
 }
 
 .price-tag {
   font-size: 50px;
   font-weight: 700;
-  color: #111827;
+  color: #0d1b2a;
   line-height: 1;
 }
 
@@ -232,9 +237,13 @@
 }
 
 .price-subtitle {
-  margin-top: auto;
+  margin-top: 10px;
   font-size: 15;
-  color: #7b7b7b;
+  color: #888888;
+}
+
+.price-pro .price-subtitle {
+  color: ##ffffff80;
 }
 
 hr {
@@ -258,7 +267,11 @@ hr {
 }
 
 .price-pro .feature-list li {
-  color: whitesmoke;
+  color: #ffffffcc;
+}
+
+.price-team .feature-list li {
+  color: #333333;
 }
 
 .feature-list li::before {
@@ -266,7 +279,7 @@ hr {
   position: absolute;
   left: 0;
   top: 0;
-  color: #4f46e5;
+  color: #2563eb;
   font-size: 24px;
   line-height: 1;
 }
@@ -296,4 +309,118 @@ hr {
 .btn-team {
   border: 2px solid #2b2b2b;
   color: #222;
+}
+
+/********* AI Section: SPONSOR ***********/
+.sponsors {
+  padding: 100px 20px;
+  background: #ffffff;
+}
+
+.container {
+  max-width: 1320px;
+  margin: auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-tag {
+  display: inline-block;
+  color: #4f46e5;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.section-header h2 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 4rem;
+}
+
+.section-header p {
+  font-size: 1.5rem;
+  color: #575757;
+  margin: auto;
+  max-width: 650px;
+}
+
+/*********** Sponsor Logo Grid ***********/
+
+.sponsor-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.sponsor-card {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  background: #fff;
+  transition: 0.35s;
+}
+
+.sponsor-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.sponsor-card img {
+  width: 140px;
+  max-width: 80%;
+  filter: grayscale(100%);
+  opacity: 0.75;
+  transition: 0.3s;
+}
+
+.sponsor-card:hover img {
+  filter: none;
+  opacity: 1;
+}
+
+/************ Footer ****************/
+
+.footer {
+  background: #1b2130;
+  padding: 36px 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left p {
+  color: #8b93a7;
+  font-size: 15px;
+  margin: 0;
+}
+
+.footer-right {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-right a {
+  color: #8b93a7;
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.footer-right a:hover {
+  color: #ffffff;
 }
